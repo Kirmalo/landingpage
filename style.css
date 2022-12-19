@@ -60,12 +60,14 @@ ul  {
     flex:1;
     flex-shrink: 1;
     justify-content: space-around;
+    border: 16px;
 }
 
 .content-container  {
     display:flex;
     flex-direction: column;
     flex:1;
+    justify-content: space-around;
 }
 
 .magic-logo {
@@ -104,4 +106,17 @@ button  {
 .times  {
     display:flex;
     justify-content: space-around;
+    padding: 16px;
+}
+
+.cities {
+    display:flex;
+    justify-content: space-around;
+    padding: 16px;
+}
+
+.call {
+    padding:25px;
+    display:flex;
+    justify-content: center;
 }
