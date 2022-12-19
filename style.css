@@ -47,3 +47,8 @@ ul  {
     font-size: 18px;
     color: #f9faf8;
 }
+
+.content    {
+    display:flex;
+    flex-direction: column;
+}

@@ -22,7 +22,38 @@
     <div class="content">
         <p>The web starting page just for me.</p>
         <p>No nonsense; no bookmarks.</p>
+        <div class="button"><button><a href="https://mail.google.com">Check email</a></button></div>
+        <div class="magic-logo"><a href="http://https://www.nba.com/magic/schedule."><img src="orlando-magic-logo-transparent.png"An image of the Orlando Magic logo which links to the team schedule" width="120"></a></div>
     </div>
+
+    <div class="container">
+        <p>Current time in NYC: <span id="timeInNYC"></span></p>
+    <p>Current time in London: <span id="timeInLondon"></span></p>
+    <p>Current time in Tokyo: <span id="timeInTokyo"></span></p>
+
+    <script>
+      function displayTimes() {
+        var currentTime = new Date();
+        var offset = currentTime.getTimezoneOffset();
+        
+        var timeInNYC = new Date(currentTime.getTime() + offset * 60 * 1000);
+        var timeInNYCString = timeInNYC.toLocaleTimeString();
+        document.getElementById("timeInNYC").innerHTML = timeInNYCString;
+        
+        var timeInLondon = new Date(currentTime.getTime() + (offset + 60) * 60 * 1000);
+        var timeInLondonString = timeInLondon.toLocaleTimeString();
+        document.getElementById("timeInLondon").innerHTML = timeInLondonString;
+        
+        var timeInTokyo = new Date(currentTime.getTime() + (offset + 540) * 60 * 1000);
+        var timeInTokyoString = timeInTokyo.toLocaleTimeString();
+        document.getElementById("timeInTokyo").innerHTML = timeInTokyoString;
+      }
+      
+      setInterval(displayTimes, 1000);
+    </script>
+    </div>
+
+
 
     <div class="footer">
         Copyright © Christopher S Pettus 2022
