@@ -54,12 +54,25 @@ ul  {
 
 .content    {
     display:flex;
-    flex-direction: column;
     background-color: #1F2937;
     padding: 16px;
     color: #f9faf8;
     flex:1;
     flex-shrink: 1;
+    justify-content: space-around;
+}
+
+.content-container  {
+    display:flex;
+    flex-direction: column;
+    flex:1;
+}
+
+.magic-logo {
+    display:flex;
+    flex:2;
+    justify-content: center;
+    align-items: center;
 }
 
 .container  {
@@ -67,13 +80,12 @@ ul  {
     flex:1;
     font-family: 'Courier New', Courier, monospace;
     color:#1F2937;
-    justify-content: space-around;
-    flex-wrap: wrap;
     flex-shrink: 1;
+    flex-direction: column;
 }
 
 .quote  {
-    background-color: E5E7EB;
+    background-color: lightblue;
     font-size: 26px;
     font-style: italic;
     text-align: center;
@@ -87,4 +99,9 @@ button  {
 
 .hero   {
     font-size: 26px;
+}
+
+.times  {
+    display:flex;
+    justify-content: space-around;
 }
