@@ -1,10 +1,11 @@
 body  {
    font-family: 'Courier New', Courier, monospace;
-   height: 100vh;
    margin: 0;
    overflow:hidden;
    display: flex; 
    flex-direction: column;
+   flex-wrap:wrap;
+   min-height: 100vh;
 }
 
 .header {
@@ -12,10 +13,12 @@ body  {
     padding: 16px;
     display:flex;
     justify-content: space-between;
+    font-weight: 700;
+    height: 50px;
 }
 
 .logo   {
-    font-size: 18px;
+    font-size: 24px;
     color: #f9faf8;
     padding: 16px;
 }
@@ -32,6 +35,7 @@ ul  {
     padding:0;
     gap: 15px;
     display:flex;
+    font-size: 18px;
 }
 
 .header-links {
@@ -46,9 +50,22 @@ ul  {
     justify-content: center;
     font-size: 18px;
     color: #f9faf8;
+    height: 35px;
 }
 
 .content    {
     display:flex;
     flex-direction: column;
+    background-color: #1F2937;
+    padding: 16px;
+    color: #f9faf8;
+    flex:1;
+}
+
+.container  {
+    display: flex;
+    flex:1;
+    font-family: 'Courier New', Courier, monospace;
+    color:#1F2937;
+    justify-content: space-around;
 }
