@@ -39,3 +39,11 @@ ul  {
     justify-content: flex-end;
     align-items: center;
 }
+.footer {
+    background-color: #1F2937;
+    padding: 16px;
+    display:flex;
+    justify-content: center;
+    font-size: 18px;
+    color: #f9faf8;
+}
